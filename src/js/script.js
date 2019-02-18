@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             trigger.remove();
 
-            removeBtn.classList.add('goods_item-remove');
+            removeBtn.classList.add('goods__item-remove');
             removeBtn.innerHTML = '&times';
             item.appendChild(removeBtn);
 
