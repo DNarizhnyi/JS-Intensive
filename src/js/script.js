@@ -1,3 +1,5 @@
+
+// Создаем переменные
 window.addEventListener('DOMContentLoaded', () => {
     const cartWrapper = document.querySelector('.cart__wrapper'),
     cart = document.querySelector('.cart'),
@@ -10,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     totalost = document.querySelector('.cart__total > span'),
     titles = document.querySelectorAll('.goods_title');
 
+//Описываем функцию открытия кнопки "корзина"
     function openCart() {
         cart.style.display = 'block';
         document.body.style.overflow = 'hidden';
@@ -19,10 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
         cart.style.display = 'none';
         document.body.style.overflow = '';
     } 
-
-    open.addEventListener('click',openCart); // нажатие на кнопку корзины
+// обрабатываем событие касания и вызываем функцию закрытия-открытия
+    open.addEventListener('click', openCart); // нажатие на кнопку корзины
     close.addEventListener('click', closeCart);
 
+// Разобрать этот код завтра =)
     goodsBtn.forEach(function (btn, i) {
         btn.addEventListener('click', () => {
             let item = products[i].cloneNode(true),
