@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
         products = document.querySelectorAll('.goods__item'),
         confirm = document.querySelector('.confirm'),
         badge = document.querySelector('.nav_badge'),
-        totalost = document.querySelector('.cart__total > span'),
+        totalCost = document.querySelector('.cart__total > span'),
         titles = document.querySelectorAll('.goods_title');
 
     //Описываем функцию открытия кнопки "корзина"
